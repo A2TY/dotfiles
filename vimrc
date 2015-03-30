@@ -1,3 +1,9 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" User Config
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 "エンコード
 set encoding=utf8
 "ファイルエンコード
@@ -42,6 +48,8 @@ set matchtime=3
 set wrap
 "コマンドを画面最下部に表示する
 set showcmd
+"NERDTree起動
+nmap <silent><C-n> :NERDTreeToggle<CR>
 
 "全角スペースのハイライトを設定
 function! ZenkakuSpace()
@@ -70,23 +78,42 @@ hi CursorLineNr ctermbg=4 ctermfg=0
 set cursorline
 hi clear CursorLine
 
-"NeoBundle設定
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" NeoBundle Config
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 "bundleで管理するディレクトリを指定
-set runtimepath+=~/.vim/bundle/neobundle.vim/
- 
-"Required:
+if has('vim_starting')
+  set nocompatible
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+endif
+
 call neobundle#begin(expand('~/.vim/bundle/'))
  
 "neobundle自体をneobundleで管理
 NeoBundleFetch 'Shougo/neobundle.vim'
- 
-"今後このあたりに追加のプラグインをどんどん書いて行きます！！"
- 
+
+"ヘルプの日本語化
+NeoBundle 'vim-jp/vimdoc-ja'
+
+"カレントディレクトリを表示
+NeoBundle 'scrooloose/nerdtree'
+
+"括弧の自動入力
+NeoBundle 'Townk/vim-autoclose' 
+
 call neobundle#end()
- 
-"Required:
+
 filetype plugin indent on
- 
-"未インストールのプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定
-"毎回聞かれると邪魔な場合もあるので、この設定は任意です。
+
+"プラグインがインストールされているかをチェック 
 NeoBundleCheck
+
+if !has('vim_starting')
+  ".vimrcを読み込み直した時のための設定
+  call neobundle#call_hook('on_source')
+endif
