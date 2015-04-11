@@ -1,0 +1,20 @@
+[core]
+	editor = vim
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	co = checkout
+	st = status
+	br = branch
+	so = remote show origin
+[user]
+	name = yoshijun
+	email = yoshijun@users.noreply.github.com
+[color]
+	ui = auto
+[push]
+	default = simple
+[url "git@github.com:"]
+	insteadOf = git://github.com/
+	insteadOf = https://github.com/
+	insteadOf = http://github.com/
