@@ -33,8 +33,9 @@ alias top='top -o cpu'
 alias cdg='cd ~/dev/repos/'
 alias cdv='cd ~/dev/vagrant/'
 alias cdu='cd ~/Dropbox/university/2年'
-
+alias pre="open -a Preview"
 
 #prompt
 #
 export PS1='[\[\033[34m\]\t \u@\h:\W\[\033[00m\]]\$ '
+
