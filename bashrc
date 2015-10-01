@@ -32,10 +32,13 @@ alias afp='afplay -q 1'
 alias top='top -o cpu'
 alias cdg='cd ~/dev/repos/'
 alias cdv='cd ~/dev/vagrant/'
-alias cdu='cd ~/Dropbox/university/2年'
-alias pre="open -a Preview"
+alias cdu='cd ~/Dropbox/university/2年/2年後期'
+alias pre='open -a Preview'
+alias sdm='diskutil mount disk2s1'
+alias sdum='diskutil unmount disk2s1'
+alias amp='~/dev/afplay_music_player/amp.sh'
 
-#prompt
+# prompt
 #
 export PS1='[\[\033[34m\]\t \u@\h:\W\[\033[00m\]]\$ '
 
