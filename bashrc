@@ -32,11 +32,12 @@ alias afp='afplay -q 1'
 alias top='top -o cpu'
 alias cdg='cd ~/dev/repos/'
 alias cdv='cd ~/dev/vagrant/'
-alias cdu='cd ~/Dropbox/university/2年/2年後期'
+alias cdu='cd ~/Dropbox/00_university/00_2年/00_2年後期'
 alias pre='open -a Preview'
 alias sdm='diskutil mount disk2s1'
 alias sdum='diskutil unmount disk2s1'
 alias amp='~/dev/afplay_music_player/amp.sh'
+alias brew="env PATH=${PATH/\/Users\/tasukujp\/\.pyenv\/shims:/} brew"
 
 # prompt
 #
