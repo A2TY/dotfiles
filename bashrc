@@ -38,6 +38,7 @@ alias sdm='diskutil mount disk2s1'
 alias sdum='diskutil unmount disk2s1'
 alias amp='~/dev/afplay_music_player/amp.sh'
 alias brew="env PATH=${PATH/\/Users\/tasukujp\/\.pyenv\/shims:/} brew"
+alias chauto='/Users/ty/dev/shell_script/chownauto.sh'
 
 # prompt
 #
