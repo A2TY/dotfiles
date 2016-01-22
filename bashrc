@@ -36,11 +36,17 @@ alias cdu='cd ~/Dropbox/00_university/00_2年/00_2年後期'
 alias pre='open -a Preview'
 alias sdm='diskutil mount disk2s1'
 alias sdum='diskutil unmount disk2s1'
-alias amp='~/dev/afplay_music_player/amp.sh'
+alias amp='~/dev/shell_script/amp.sh'
 alias brew="env PATH=${PATH/\/Users\/tasukujp\/\.pyenv\/shims:/} brew"
 alias chauto='/Users/ty/dev/shell_script/chownauto.sh'
 
 # prompt
 #
 export PS1='[\[\033[34m\]\t \u@\h:\W\[\033[00m\]]\$ '
+
+# Android SDK
+#
+export PATH=$PATH:~/Library/Android/sdk/platform-tools
+export PATH=$PATH:~/Library/Android/sdk/tools
+export ANDROID_HOME=$PATH:~/Library/Android/sdk
 
