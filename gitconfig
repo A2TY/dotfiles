@@ -8,8 +8,8 @@
 	br = branch
 	so = remote show origin
 [user]
-	name = yoshijun
-	email = yoshijun@users.noreply.github.com
+	name = A2TY
+	email = a2ty.dev@gmail.com
 [color]
 	ui = auto
 [push]
