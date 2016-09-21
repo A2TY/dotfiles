@@ -93,6 +93,8 @@ set wrap
 set showcmd
 "NERDTree起動
 nmap <silent><C-n> :NERDTreeToggle<CR>
+"バックスペースを有効
+set backspace=indent,eol,start
 
 "全角スペースのハイライトを設定
 function! ZenkakuSpace()
