@@ -38,6 +38,7 @@ alias sdm='diskutil mount disk2s1'
 alias sdum='diskutil unmount disk2s1'
 alias amp='~/dev/shell_script/amp.sh'
 alias brew="env PATH=${PATH/\/Users\/tasukujp\/\.pyenv\/shims:/} brew"
+alias brew="env PATH=${PATH/\/usr\/local\/CrossPack-AVR\/bin:?/} brew"
 alias chauto='/Users/ty/dev/shell_script/chownauto.sh'
 
 # prompt
@@ -50,3 +51,11 @@ export PATH=$PATH:~/Library/Android/sdk/platform-tools
 export PATH=$PATH:~/Library/Android/sdk/tools
 export ANDROID_HOME=$PATH:~/Library/Android/sdk
 
+# go
+#
+export GOPATH=$HOME/dev/go/third-party:$HOME/dev/go/my-project
+export PATH=$HOME/dev/go/third-party/bin:$HOME/dev/go/my-project/bin:$PATH
+
+# AVR
+#
+export PATH=$PATH:/usr/local/CrossPack-AVR/bin
