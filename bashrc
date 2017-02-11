@@ -32,7 +32,7 @@ alias afp='afplay -q 1'
 alias top='top -o cpu'
 alias cdg='cd ~/dev/repos/'
 alias cdv='cd ~/dev/vagrant/'
-alias cdu='cd ~/Dropbox/00_university/00_2年/00_2年後期'
+alias cdu='cd ~/Dropbox/00_university/'
 alias pre='open -a Preview'
 alias sdm='diskutil mount disk2s1'
 alias sdum='diskutil unmount disk2s1'
@@ -40,6 +40,9 @@ alias amp='~/dev/shell_script/amp.sh'
 alias brew="env PATH=${PATH/\/Users\/tasukujp\/\.pyenv\/shims:/} brew"
 alias brew="env PATH=${PATH/\/usr\/local\/CrossPack-AVR\/bin:?/} brew"
 alias chauto='/Users/ty/dev/shell_script/chownauto.sh'
+alias avrdudew=avrdudew
+function avrdudew() { command avrdude -c avrispmkII -P usb -p t2313 -U flash:w:$1; }
+alias cpavr="cp ~/dev/avr/attiny2313/Makefile ~/dev/avr/attiny2313/tn2313def.inc ./"
 
 # prompt
 #
@@ -59,3 +62,4 @@ export PATH=$HOME/dev/go/third-party/bin:$HOME/dev/go/my-project/bin:$PATH
 # AVR
 #
 export PATH=$PATH:/usr/local/CrossPack-AVR/bin
+
