@@ -1,15 +1,14 @@
 # dotfiles
 
-###概要
+### 概要
+Mac OSにおける設定ファイル
 
-  Mac OSにおける設定ファイル
+### bash関係
+* bashrc
 
-###bash関係
+### vim関係
+* vimrc
+* vim/
 
-  * bashrc
-
-###vim関係
-
-  * vimrc
-
-  * vim/
+### git関係
+* gitconfig
